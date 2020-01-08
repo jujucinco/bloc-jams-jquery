@@ -48,9 +48,9 @@ class Player {
     this.soundObject.setVolume(percent);
   }
 
-  prettyTime(song){
-    const minutes= Math.floor(song / 60);
-    const seconds = Number(song%60/100).toFixed(2).substring(2);
+  prettyTime(songDuration){
+    const minutes= Math.floor(songDuration / 60);
+    const seconds = Number(songDuration%60/100).toFixed(2).substring(2);
     return minutes+':'+seconds;
   }
 }
